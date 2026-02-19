@@ -1,14 +1,11 @@
 package com.eazybytes.ex4.bean;
 
-import jakarta.annotation.PreDestroy;
-import org.springframework.beans.factory.InitializingBean;
 import org.springframework.stereotype.Component;
 
-
-public class Vehicle{
-
-    public Vehicle(){
-        System.out.println("Vehicle Bean created");
+@Component
+public class Car {
+    public Car(){
+        System.out.println("Car Bean created");
     }
     public String getName() {
         return name;
@@ -27,6 +24,4 @@ public class Vehicle{
 
     private String name;
 
-
 }
-
